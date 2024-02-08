@@ -2,8 +2,8 @@ const { Sequelize } = require('sequelize')
 
 // database
 const sequelize = new Sequelize(
-  'postgres://fakeurl', // TODO
-  // process.env.PGHOST + ":" + process.env.PGPORT + "/" + process.env.PGDATABASE, // TODO: database connection string
+  // 'postgres://fakeurl', // TODO
+  process.env.PGHOST + ":" + process.env.PGPORT + "/" + process.env.PGDATABASE, // TODO: database connection string
   {
     dialect: 'postgres',
     dialectOptions: {
